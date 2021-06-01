@@ -26,17 +26,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>┗┓ Haii {message.from_user.first_name} My Name is 𝙈𝙐𝙎𝙄𝘾 𝙈𝘼𝙉 ┏┛\n
-Saya Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group Dengan cara yang Mudah
-Saya Memiliki Banyak Fitur Praktis Seperti :
-┏━━━━━━━━━━━━━━
-┣• Memutar Musik.
-┣• Mendownload Lagu.
-┣• Mencari Lagu Yang ingin di Putar atau di Download.
-┗━━━━━━━━━━━━━━
-❃ Managed With ☕️ By : [Risman](https://t.me/mrismanaziz)
+        f"""<b>┗┓ WOY {message.from_user.first_name}  ┏┛\n
+
+❃ dibuat saat sedang sange : [Hehe](https://t.me/milkywaysboys)
 ━━━━━━━━━━━━━━━
-Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
+mo culik gua ke Grup lu? culik gua!
 </b>""",
 
 # Edit Yang Perlu Lu ganti 
@@ -46,13 +40,13 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
             [ 
                 [
                     InlineKeyboardButton(
-                        "📜 Cara Menggunakan BOT 📜", url="https://t.me/Lunatic0de/20")
+                        "🥵 Cara pake 🥵", url="https://t.me/Lunatic0de/20")
                   ],[
                     InlineKeyboardButton(
                         "Group Support", url="https://t.me/SharingUserbot"
                     ),
                     InlineKeyboardButton(
-                        "Channel", url="https://t.me/Lunatic0de"
+                        "Channel", url="https://t.me/allinone_cn"
                     )
                 ]
             ]
@@ -67,15 +61,15 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ **Apakah Anda ingin mencari Link YouTube?**",
+        "💁🏻‍♂️ **cari link YouTube?**",
         reply_markup=InlineKeyboardMarkup(
             [   
                 [    
                     InlineKeyboardButton(
-                        "✅ Ya", switch_inline_query_current_chat=""
+                        "✅ iya", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "❌ Tidak ", callback_data="close"
+                        "❌ kaga ", callback_data="close"
                     )
                 ]
             ]
@@ -89,12 +83,12 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        """**Klik Tombol dibawah untuk Melihat Cara Menggunakan Bot**""",
+        """**Klik Tombol dibawah biar tau cara pakenya**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara Menggunakan BOT 📜", url="https://t.me/Lunatic0de/20"
+                        "🥵 Cara Pake 🥵", url="https://t.me/Lunatic0de/20"
                     )
                 ]
             ]
@@ -108,7 +102,7 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Daftar admin** telah **diperbarui**""",
+    await message.reply_text("""✅ Bot **berhasil direstart!**\n\n• **Daftar admin** telah **diperbarui**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -116,7 +110,7 @@ async def reload(client: Client, message: Message):
                         "Group Support", url="https://t.me/SharingUserbot"
                     ),
                     InlineKeyboardButton(
-                        "Owner", url="https://t.me/mrismanaziz"
+                        "Owner", url="https://t.me/milkywaysboys"
                     )
                 ]
             ]
